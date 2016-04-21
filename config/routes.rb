@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  get 'treddit/index'
+  resources :posts
+  root 'treddit#index'
 
-  get 'treddit/post'
+  get 'post' => 'treddit#post'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
