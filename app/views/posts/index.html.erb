@@ -1,7 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Posts</h1>
-
+<%= link_to new_post_path do %>
+  <i class="fa fa-music" aria-hidden="true"></i> New Post
+<%end%>
 <div class="row">
     <% @posts.each do |post| %>
       <div class="col-md-4">
